@@ -43,7 +43,7 @@ The [`/sql`](./sql) directory contains all data pipelines and analysis scripts:
 
 * [`sql/01_v_business_performance.sql`](./sql/01_v_business_performance.sql): Aggregates revenue, session volume, purchase counts, and campaign ROI.
 * [`sql/02_v_ux_and_page_analytics.sql`](./sql/02_v_ux_and_page_analytics.sql): Models landing page entrances, total pageviews, unique users, and 404 page health.
-* [`sql/03_v_funnel_analytics.sql`](./sql/03_v_funnel_analytics.sql): Builds the e-commerce purchase funnel (`session_start` → `add_to_cart` → `purchase`) and product performance.
+* [`sql/03_v_funnel_analytics.sql`](./sql/03_v_funnel_analytics.sql): Builds the e-commerce purchase funnel (session_start → view_item → begin_checkout → add_to_cart → purchase) and product performance.
 * [`sql/04_ad_hoc_business_queries.sql`](./sql/04_ad_hoc_business_queries.sql): Contains 8 dedicated analytical queries used for deep-dive exploratory data analysis.
 
 ---
