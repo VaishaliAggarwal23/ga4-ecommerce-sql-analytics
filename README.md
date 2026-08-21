@@ -8,6 +8,7 @@ This project analyzes **Google Analytics 4 (GA4)** e-commerce data hosted in **G
 The underlying data transformations were engineered using modular **SQL views**, which feed directly into an interactive 5-page **Looker Studio Dashboard** built for business stakeholders and executive decision-makers.
 
 * **🔗 Live Interactive Dashboard:** [View Looker Studio Dashboard](https://datastudio.google.com/reporting/6d0c2820-01da-4a19-ace0-a1e9f5512985)
+* **📄 Full Case Study:** [View PDF Report](./docs/GA4-Ecommerce-Analytics-Case-Study.pdf)
 * **💻 Raw SQL Transformations:** Located in the [`/sql`](./sql) folder.
 
 ---
