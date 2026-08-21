@@ -1,4 +1,4 @@
-# 📊 GA4 E-commerce Revenue Architecture & Growth Diagnostics
+# 📊GA4 E-commerce Analytics: Revenue, Funnel & Growth Diagnostics
 
 ## 📌 Executive Summary
 This project analyzes **Google Analytics 4 (GA4)** e-commerce data hosted in **Google BigQuery** to diagnose revenue bottlenecks, quantify marketing campaign efficiency, and pinpoint critical website user drop-offs. 
@@ -7,6 +7,17 @@ The underlying data transformations were engineered using modular **SQL views**,
 
 * **🔗 Live Interactive Dashboard:** [View Looker Studio Dashboard](https://datastudio.google.com/reporting/6d0c2820-01da-4a19-ace0-a1e9f5512985)
 * **💻 Raw SQL Transformations:** Located in the [`/sql`](./sql) folder.
+
+---
+## 🎯 Business Questions
+
+This analysis was designed to answer the following business questions:
+
+1. Which marketing channels and campaigns generate the strongest revenue and purchase performance?
+2. Which traffic sources show poor session quality and require further investigation?
+3. Where is the largest drop-off in the customer journey?
+4. Which products contribute most to e-commerce revenue?
+5. Are there technical issues, such as 404/error pages, that may affect the user experience?
 
 ---
 
