@@ -1,5 +1,7 @@
 # 📊GA4 E-commerce Analytics: Revenue, Funnel & Growth Diagnostics
 
+![GA4 E-commerce Analytics Dashboard](images/dashboard-preview.png)
+
 ## 📌 Executive Summary
 This project analyzes **Google Analytics 4 (GA4)** e-commerce data hosted in **Google BigQuery** to diagnose revenue bottlenecks, quantify marketing campaign efficiency, and pinpoint critical website user drop-offs. 
 
