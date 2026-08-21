@@ -31,7 +31,23 @@ This analysis was designed to answer the following business questions:
 * **Querying & Modeling:** Standard SQL (Nested Record Unnesting, CTEs, Window Functions)
 * **Business Intelligence:** Looker Studio
 
-Data Flow: GA4 Raw Event Stream → Google BigQuery Transformations (v_business_performance, v_ux_and_page_analytics, v_funnel_analytics) → Looker Studio Executive Dashboard
+### 🔄 Analytics Pipeline
+
+```mermaid
+flowchart LR
+    A[GA4 E-commerce Events] --> B[BigQuery Raw Event Data]
+    B --> C[SQL Transformation & Modeling]
+
+    C --> D[v_business_performance]
+    C --> E[v_ux_and_page_analytics]
+    C --> F[v_funnel_analytics]
+
+    D --> G[Looker Studio]
+    E --> G
+    F --> G
+
+    G --> H[Business Insights & Recommendations]
+```
 
 ---
 
