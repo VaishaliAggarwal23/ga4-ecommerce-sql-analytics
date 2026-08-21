@@ -34,17 +34,20 @@ Data Flow: GA4 Raw Event Stream → Google BigQuery Transformations (v_business_
 
 ## 💡 Key Business Findings & Recommendations
 
-1. **High Paid Campaign Bounce Rates:**
-   * **Insight:** Non-organic paid channels exhibit elevated bounce rates (~49.8%), signaling poor landing page relevance or mismatched targeting.
-   * **Action:** Reallocate ad spend toward top-performing referral channels and high-intent SEO landing pages.
+1. **Paid Traffic Quality Requires Investigation**
+   * **Finding:** Non-organic paid traffic recorded the highest observed bounce rate (~49.8%), indicating lower session quality compared with other major traffic sources.
+   * **Business Interpretation:** This pattern may indicate a mismatch between audience targeting, campaign messaging, landing-page relevance, or visitor intent.
+   * **Recommended Action:** Investigate paid campaign targeting and landing-page alignment before increasing investment. Compare campaign-level performance to identify underperforming traffic sources.
 
-2. **Severe Upper-Funnel Drop-Off:**
-   * **Insight:** Over 75% of landing traffic exits between initial entry (`session_start`) and viewing a product (`view_item`).
-   * **Action:** Redesign homepage category navigation and hero banners to guide users directly to product pages.
+2. **Largest Observed Drop-Off Occurs Before Product Engagement**
+   * **Finding:** More than 75% of observed funnel activity drops between `session_start` and `view_item`, making this the largest drop-off point in the analyzed journey.
+   * **Business Interpretation:** Users may not be progressing from their entry experience to product discovery. Landing-page relevance, navigation, page content, and traffic intent are potential areas for further investigation.
+   * **Recommended Action:** Prioritize analysis and testing of high-traffic landing pages and product discovery paths to identify opportunities to improve progression to `view_item`.
 
-3. **Data Health & Diagnostic Audit:**
-   * **Insight:** Identified localized 404 error routes and broken campaign URL parameters impacting user navigation.
-   * **Action:** Implement server-side redirects and clean up UTM tracking templates.
+3. **Technical Error Paths Were Identified**
+   * **Finding:** The analysis identified a small number of 404/error page paths requiring monitoring.
+   * **Business Interpretation:** While the observed error volume is low, broken or invalid URLs can negatively affect user experience when they occur.
+   * **Recommended Action:** Monitor error-page paths and investigate recurring sources. Implement redirects or correct invalid campaign/website URLs where a recurring issue is confirmed.
 
 ---
 
